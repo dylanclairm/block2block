@@ -100,24 +100,27 @@ topic_keywords = {
 trending_topics = {}
 
 for subreddit, posts in all_posts.items():
-    topics = []
+    topic_scores = {}  # Dictionary to store weighted topic scores
     for post in posts:
         title = post['data']['title'].lower()
         flair = post['data']['link_flair_text']
         if flair:
             flair = flair.lower()
+        score = post['data'].get('score', 0)  # Get upvote count
 
         # Extract topics from title and flair
         for keyword, topic in topic_keywords.items():
             if keyword in title or (flair and keyword in flair):
-                topics.append(topic)
+                if topic not in topic_scores:
+                    topic_scores[topic] = 0
+                topic_scores[topic] += score  # Weight topic by upvotes
 
-    # Count top topics
-    topic_counts = Counter(topics)
-    trending_topics[subreddit] = topic_counts.most_common(5)
+    # Sort topics by score (highest first)
+    sorted_topics = sorted(topic_scores.items(), key=lambda x: x[1], reverse=True)
+    trending_topics[subreddit] = sorted_topics[:5]  # Top 5 topics by upvote weight
 
 # Save trending topics to a JSON file
-with open('trending_topics.json', 'w') as f:
+with open('trending_topics_weighted.json', 'w') as f:
     json.dump(trending_topics, f, indent=2)
 
-print("✅ Trending topics extracted and saved to 'trending_topics.json'")
+print("✅ Trending topics extracted and saved to 'trending_topics_weighted.json'")

@@ -55,15 +55,21 @@ for subreddit in subreddits:
         # Print each post
         for i, post in enumerate(posts, 1):
             post_data = post['data']
+            
+            if post_data.get('score', 0) < 10:
+                continue  # Skip posts with less than 10 upvotes
+            
             title = post_data.get('title', 'No title')
             flair = post_data.get('link_flair_text', 'No flair')
             url = post_data.get('url', 'No URL')
             created_utc = post_data.get('created_utc', 'Unknown time')
+            score = post_data.get('score', 0)
             
             print(f"  {i}. Title: {title}")
             print(f"     Flair: {flair}")
             print(f"     URL: {url}")
             print(f"     Created: {created_utc}")
+            print(f"     Upvotes: {score}") 
             print("     ---")
             
     except Exception as e:
