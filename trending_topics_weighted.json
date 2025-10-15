@@ -1,0 +1,214 @@
+{
+  "Atlanta": [
+    [
+      "Politics",
+      3132
+    ],
+    [
+      "DHS Shutdown",
+      2533
+    ],
+    [
+      "Parks",
+      1466
+    ],
+    [
+      "Pets",
+      736
+    ],
+    [
+      "Transportation",
+      736
+    ]
+  ],
+  "Athens": [
+    [
+      "Parks",
+      515
+    ],
+    [
+      "Election",
+      402
+    ],
+    [
+      "Question",
+      292
+    ],
+    [
+      "Pets",
+      202
+    ],
+    [
+      "Transportation",
+      151
+    ]
+  ],
+  "Savannah": [
+    [
+      "Parks",
+      870
+    ],
+    [
+      "Transportation",
+      401
+    ],
+    [
+      "Election",
+      311
+    ],
+    [
+      "Electricity Rates",
+      216
+    ],
+    [
+      "Politics",
+      112
+    ]
+  ],
+  "Augusta": [
+    [
+      "Transportation",
+      519
+    ],
+    [
+      "Politics",
+      376
+    ],
+    [
+      "Election",
+      186
+    ],
+    [
+      "Halloween Events",
+      166
+    ],
+    [
+      "Event",
+      139
+    ]
+  ],
+  "Macon": [
+    [
+      "Parks",
+      402
+    ],
+    [
+      "Transportation",
+      57
+    ],
+    [
+      "Pets",
+      34
+    ],
+    [
+      "Election",
+      28
+    ],
+    [
+      "Electricity Rates",
+      24
+    ]
+  ],
+  "ColumbusGA": [
+    [
+      "Transportation",
+      385
+    ],
+    [
+      "Public Safety",
+      188
+    ],
+    [
+      "Parks",
+      88
+    ],
+    [
+      "Election",
+      38
+    ],
+    [
+      "Halloween Events",
+      12
+    ]
+  ],
+  "Decatur": [
+    [
+      "Pets",
+      10
+    ],
+    [
+      "Parks",
+      8
+    ],
+    [
+      "Affordable Housing",
+      1
+    ]
+  ],
+  "Alpharetta": [
+    [
+      "Parks",
+      190
+    ],
+    [
+      "Transportation",
+      175
+    ],
+    [
+      "Election",
+      149
+    ],
+    [
+      "Electricity Rates",
+      71
+    ],
+    [
+      "Traffic Safety",
+      27
+    ]
+  ],
+  "Statesboro": [
+    [
+      "Parks",
+      84
+    ],
+    [
+      "Gaming",
+      38
+    ],
+    [
+      "Pets",
+      27
+    ],
+    [
+      "Transportation",
+      11
+    ],
+    [
+      "Electricity Rates",
+      9
+    ]
+  ],
+  "Valdosta": [
+    [
+      "Parks",
+      56
+    ],
+    [
+      "Transportation",
+      39
+    ],
+    [
+      "Pets",
+      31
+    ],
+    [
+      "Event",
+      27
+    ],
+    [
+      "Electricity Rates",
+      14
+    ]
+  ]
+}

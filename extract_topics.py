@@ -1,5 +1,4 @@
 import json
-from collections import Counter
 
 # Load scraped posts from JSON file
 with open('scraped_posts.json', 'r') as f:
